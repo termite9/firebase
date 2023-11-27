@@ -1,0 +1,56 @@
+.product {
+    display: flex;
+    padding: 0px;
+}
+
+.thumbnail {
+    max-width: 200px;
+    width: 100%;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    border: 5px ridge burlywood;
+}
+
+.product .price {
+    color: blue;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.product .title {
+    background-color: beige;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.product .date {
+    color: grey;
+    font-size: 13px;
+}
+
+.flex-grow-1 {
+    display: flex;
+
+}
+
+.title,
+.date,
+.price {
+    width: 100px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+.content {
+    width: 800px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+.flex-grow-1 {
+    border-bottom: 1px solid black;
+    padding: 0px;
+    margin: 0px;
+
+}
