@@ -98,10 +98,14 @@
             결과.forEach((doc) => {
                 console.log(doc)
                 var 템플릿 = `<div class="product">
-
-                    <div class="thumbnail" style="background-image: url(${doc.data().이미지})"  ></div>
-     
-     
+        <div class="thumbnail" style="background-image: url(${doc.data().이미지})"></div>
+            <div class="flex-grow-1 p-4">
+                <h5 class="title">${doc.data().제목}</h5>
+                <p class="date">${doc.data().날짜.toDate().getFullYear() + '.' + (doc.data().날짜.toDate().getMonth() + 1)}</p>
+                <p class="price">${doc.data().가격}</p>
+                <p class="content">${doc.data().내용}</p>
+                <p class="float-end">☆0</p>
+            </div>
         </div>`;
                 $('.container').append(템플릿)
             })
